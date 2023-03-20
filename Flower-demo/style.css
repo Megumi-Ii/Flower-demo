@@ -1,0 +1,494 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+    font-weight: lighter;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;/* 追記 */
+    display: flex;
+    
+}
+.wrapper {
+    margin: auto;
+    width: 100%;
+    
+}
+.header {
+    width: 100%;
+    height: 77px;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    position: relative;
+    position: fixed;
+}
+.logo img{
+    width: 40px;
+    margin: 5px 30px 0 30px;
+    cursor: pointer;
+}
+.name {
+    font-size: 0.8rem;
+    color: #0097b2;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.click {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+.click img {
+    margin: 10px;
+    cursor: pointer;
+}
+.main img {
+    width: 100%;
+    height: 64vh;
+    object-fit: cover;
+    margin-top: 77px;
+    background-attachment: fixed;
+}
+.about img {
+    width: 100%;
+    height: 27vh;
+    margin-top: 73px;
+    padding: 0 32px;
+    object-fit: cover;
+    position: relative;
+}
+.title {
+    position: absolute;
+    right: 111px;
+    top: 210px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    letter-spacing: 2.8px;
+}
+.Eng-ver {
+    position: absolute;
+    right: 20px;
+    top: 250px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+.img-wrap {
+    position: relative;
+    top: 50%;
+    overflow: hidden;
+    padding-top: -200px;
+}
+h1 {
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    margin: 15px 30px 10px 30px;
+}
+.contents p {
+    margin: 0 30px 10px 30px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: gray;
+}
+.sentence {
+    max-width: 90%;
+    font-size: 0.72rem;
+    letter-spacing: 2.3px;
+    margin:  28px;
+    width: 100%;
+    line-height: 22px;
+
+}
+.more {
+    width: 90%;
+    border: solid 1px;
+    text-align: center;
+    margin: 30px auto 74px auto;
+    padding: 3%;
+    font-size: 0.7rem;
+    letter-spacing: 2.2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.more:hover {
+    background: black;
+    color: white;
+}
+h2 {
+    font-size: 1rem;
+    opacity: 0.6;
+    margin: 85px auto 62px auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    
+}
+.photo-list img{
+    width: 222px;
+    height: 216px;
+    object-fit: cover;
+    flex-direction: row-reverse;
+    transition: 0.7s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.photo-list img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+.scr-target{
+    margin: 15% 5%;
+    overflow: hidden;
+    height: 218px;
+}
+.view-more {
+    width: 90%;
+    border: solid 1px;
+    text-align: center;
+    margin: 180px auto 74px auto;
+    padding: 3%;
+    font-size: 0.7rem;
+    letter-spacing: 2.2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.view-more:hover {
+    background: black;
+    color: white;
+}
+.detail-box ,.news{
+    list-style: none;
+    margin: auto;
+
+}
+.detail-box a {
+    opacity: 0.7;
+    border: solid 0.3px;
+    border-color:rgb(143, 142, 142);
+    width: 72%;
+    padding: 30px 20px;
+    margin: 10px 14%;
+    font-size: 0.8rem;
+    letter-spacing: 2.2px;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.information {
+    padding-top: 60px;
+}
+.story,.business {
+    border: solid 1px;
+    border-color:black;
+    width: 70%;
+    padding: 5%;
+    margin: 20px auto;
+    font-size: 0.7rem;
+    letter-spacing: 2.5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.story:hover ,.business:hover  {
+    background-color: black;
+    color: white;
+
+}
+.business {
+    margin-top: 30px;
+}
+h3 {
+    padding: 100px 30px 10px 30px;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-family: "游明朝",  serif;
+}
+h4 {
+    padding: 0 30px 30px 30px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-family: "ヒラギノ明朝 ProN W3",  serif;
+    opacity: 0.7;
+}
+.news-contents{
+    display: flex;
+}
+.date {
+    margin-left: 55px;
+    line-height: 22px;
+    letter-spacing: 2.6px;
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.news {
+    margin-bottom: 30px;
+}
+.news-contents p {
+    line-height: 18px;
+    font-size: 0.7rem;
+    max-width: 220px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.border-height {
+    border-right: solid 1px gray;
+    height: 42px;
+    opacity: 0.7;
+    margin: 0px 20px;
+}
+.news ,footer{
+    opacity: 0.7;
+}
+.line-top {
+    border-right: solid 1px black;
+    height: 60px;
+    margin: -10px 50%;
+     cursor: pointer;
+}
+.top {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 20px auto 30px auto;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.logo-name{
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+    color:#0097b2;
+    margin: 5px auto;
+   
+}
+.logo-name img {
+    width: 40px;
+    margin: 5px auto;
+}
+.policy {
+    font-size: 0.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.SNS {
+    display: flex;
+    width: 100px;
+    margin: 20px auto;
+    
+}
+.SNS img {
+    margin: 10px;
+    cursor: pointer;
+
+}
+.copyright {
+    margin: 0 auto;
+    font-size: 0.6rem;
+    opacity: 0.5;
+    letter-spacing: 3.2px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.arrow{
+    display:inline-block;
+    color:black;
+    border:1px solid;
+    cursor:pointer;
+    position: relative;
+    text-decoration: none;
+}
+.arrow::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    width: 80px;
+    height: 1px;
+    background: black;
+    transition: .3s;
+}
+.arrow::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    width: 4px;
+    height: 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(-135deg);
+    transition: .3s;
+}
+.arrow:hover::before{
+    right: 10px;
+    width: 60px;
+    transition:0.5s;
+}
+.arrow:hover::after{
+    right: 10px;
+    transition:0.5s;
+}
+.detail-box {
+    padding: 20px auto;
+}
+.detail-box a:hover {
+    padding-left: 40px;
+    transition: .5s;
+}
+.detail-box p{
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    color: black;
+    border-bottom: solid 1px ;
+    width: 10px;
+    padding: 20px auto;
+    transition: .5s;
+    visibility: hidden;
+}
+.detail-box p:hover {
+    color: black;
+    border-bottom: solid 1px ;
+    width: 30px;
+    visibility: hidden;
+}
+
+.fade {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* アニメーション設定 */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
+
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .hamburger{
+    width: 18px;
+    height: 15px;
+    right: 20px;
+    position: relative;
+    position: fixed;
+    top: 25px;
+    cursor: pointer;
+  }
+  .hamburger span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black
+  }
+  .hamburger span:first-of-type {
+    top: 0;
+    transition: .5s;
+  }
+  .hamburger span:nth-of-type(2){
+    top: 45%;
+    transition: .5s;
+  }
+  .hamburger span:last-of-type{
+    top: 90%;
+    transition: .5s;
+  }
+  .slide-menu{
+    background-color:white;
+    position: fixed;
+    top: 75px;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    transform: translateX(100%); 
+    transition: .5s;
+    list-style: none;
+    z-index: 6;
+}
+.slide-menu li{
+  color: black;
+  line-height: 400%;
+  text-align: center;
+  cursor: pointer;
+}
+.hamburger.active span:first-of-type{
+    top: 0;
+  }
+  .hamburger.active span:nth-of-type(2){
+    top: 45%;
+    right: 0;
+    width: 70%;
+  }
+  .hamburger.active span:last-of-type{
+    top: 90%;
+    right: 0;
+    width: 50%;
+  }
+  .slide-menu.active{
+    transform: translateX(0); 
+  }
+  
+  @media screen and (min-width:768px) {
+      .main img {
+          height: 100vh;
+          right: 0;
+          padding-left: 20%;
+      }
+      .title, .Eng-ver {
+          left: 11%;
+          top: 50%;
+          font-size: 2rem;
+      }
+      .Eng-ver {
+          top: 55%;
+          margin-top: 25px;
+          font-size: 0.8rem;
+      }
+      .products {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .products img {
+          max-width: 500px;
+          width: 100%;
+      }
+  }
