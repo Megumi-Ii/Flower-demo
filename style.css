@@ -38,7 +38,7 @@ body {
     top: 15px;
 }
 .click img {
-    margin: 10px;
+    margin: 18px 8px;
 }
 .main img {
     width: 100%;
@@ -51,8 +51,8 @@ body {
 .about img {
     width: 100%;
     height: 27vh;
-    margin-top: 73px;
-    padding: 0 32px;
+    margin-top: 0px;
+    padding: 0 28px;
     object-fit: cover;
     position: relative;
 }
@@ -60,7 +60,6 @@ body {
 .border-height,.news ,footer{
     opacity: 0.7;
 } 
-
 .title {
     position: absolute;
     left: 30px;
@@ -76,14 +75,12 @@ body {
     letter-spacing: 2px;
 }
 h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     letter-spacing: 3px;
     margin: 15px 30px 10px 30px;
 }
-.contents img{
-    margin: 0 auto ;
-}
-.contents p {
+
+.contents p, .ItemName, .price {
     margin: 10px 30px ;
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -92,14 +89,21 @@ h1 {
 .sentence {
     font-size: 0.72rem;
     letter-spacing: 2.3px;
-    margin:  28px;
+    width: 90%;
+    margin:  6% auto;
     line-height: 22px;
 }
+.more {
+    margin: 6% auto 14% auto;
+}
+.view-more{
+    margin: 60px auto 74px auto;
+}
+
 .more ,.view-more{
-    width: 100%;
+    width: 90%;
     border: solid 1px;
     text-align: center;
-    margin: 30px 0 74px 0;
     padding: 2.7%;
     font-size: 0.7rem;
     letter-spacing: 2.2px;
@@ -110,28 +114,30 @@ h1 {
     background: black;
     color: white;
 }
-.view-more {
-    margin: 180px auto 74px auto;
-}
+
 
 h2 {
-    font-size: 1rem;
-    margin: 85px auto 62px auto;
+    font-size: 0.95rem;
+    margin: 85px auto 50px auto;
     text-align: center;
     letter-spacing: 2px;
 }
 .products {
     display: flex;
     flex-wrap: wrap;
-    
- 
 }
 .scr-target {
-    width: 250px;
-    height: 250px;
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+    width: 236px;
+    height: 236px;
+    margin: 5%;
     overflow: hidden;
-    margin: auto;
-  
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
 }
 .scr-target img {
     width: 100%;
@@ -140,29 +146,27 @@ h2 {
     transition: 0.7s;
     cursor: pointer;
     flex-direction: row-reverse;
-    margin: 8%;
+    margin: 10%;
   }
   .scr-target img:hover {
     opacity: 0.6;
     zoom: 1.1;
     overflow: hidden;
-    width: 220px;
-    height: 220px;
+    width: 236px;
+    height: 236px;
   }
-
+ 
 .detail-box ,.news{
     list-style: none;
-    margin: auto;
+    margin: 0 14%;
 }
-.detail-box {
-    padding: 20px auto;
-}
+
 .detail-box a {
     border: solid 0.3px;
     border-color:rgb(143, 142, 142);
-    width: 85%;
-    padding: 30px 20px;
-    margin: 10px 14%;
+    width: 100%;
+    padding: 29px 20px;
+    margin: 3% auto;
     font-size: 0.8rem;
     letter-spacing: 2.2px;
     color: black;
@@ -179,7 +183,7 @@ h2 {
     color: black;
     border-bottom: solid 1px ;
     width: 10px;
-    padding: 20px auto;
+    padding:  auto;
     visibility: hidden;
 }
 .detail-box p:hover {
@@ -187,14 +191,14 @@ h2 {
 }
 
 .information {
-    padding-top: 60px;
+    padding-top: 70px;
 }
 .story,.business {
     border: solid 1px;
     border-color:black;
-    width: 85%;
+    width: 72%;
     padding: 5%;
-    margin: 20px auto;
+    margin: 16px auto 20px auto;
     font-size: 0.7rem;
     letter-spacing: 2.5px;
     text-align: center;
@@ -209,13 +213,13 @@ h2 {
     margin-top: 30px;
 }
 h3 {
-    padding: 100px 30px 10px 30px;
+    padding: 100px 20px 8px 30px;
     font-size: 1.6rem;
     letter-spacing: 3px;
     font-family: "游明朝",  serif;
 }
 h4 {
-    padding: 0 30px 30px 30px;
+    padding: 0 20px 30px 30px;
     font-size: 0.7rem;
     letter-spacing: 3px;
     font-family: "ヒラギノ明朝 ProN W3",  serif;
@@ -232,15 +236,16 @@ h4 {
     text-align: center;
 }
 .news {
-    margin-bottom: 30px;
+    margin: auto;
+    margin-top: 6%;
 }
 .news-contents p {
     line-height: 18px;
     font-size: 0.7rem;
     max-width: 220px;
     color: black;
-    margin-bottom: 20px;
-    margin-left: 5px;
+    margin-bottom: 7%;
+    margin-left: 0;
 }
 .border-height {
     border-right: solid 1px gray;
@@ -251,13 +256,13 @@ h4 {
 .line-top {
     border-right: solid 1px black;
     height: 60px;
-    margin: -10px 50%;
+    margin: -2% 50%;
     cursor: pointer;
 }
 .top {
     text-align: center;
     font-size: 0.8rem;
-    margin: 20px auto 30px auto;
+    margin: 3.5% auto 5% auto;
     letter-spacing: 2px;
     opacity: 0.6;
     cursor: pointer;
@@ -342,8 +347,6 @@ h4 {
 .arrow:hover::after{
     right: 10px;
 }
-
-
 .fade {
 	opacity: 0;
 	transform: translateY(30px);
@@ -351,17 +354,6 @@ h4 {
 }.fade.active {
 	opacity: 1;
 	transform: translateY(0px);
-}
-
-
-.scr-target {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0);
-}
-.scr-target.is-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: 1s;
 }
 
 .header-area{
@@ -376,7 +368,7 @@ h4 {
     right: 20px;
     position: relative;
     position: fixed;
-    top: 25px;
+    top: 33px;
     cursor: pointer;
   }
   .hamburger span{
@@ -434,27 +426,55 @@ h4 {
   .slide-menu.active{
     transform: translateX(0); 
   }
-  @media screen and (min-width:481px) {
+  
+  @media screen and (max-width:392px) {
+      .scr-target {
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        margin: auto;
+      
     }
-    .wrap {
-        width: 98%;
-    }
-  @media screen and (min-width:760px) {
-    .scr-target img{
+    .scr-target img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: 0.7s;
         cursor: pointer;
         flex-direction: row-reverse;
-        margin: 6%;
+        margin: 10%;
+      }
+      .scr-target img:hover {
+        opacity: 0.6;
+        zoom: 1.1;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+      }
+    }
+   
+  @media screen and (min-width:550px) {
+    .scr-target img{
+        width: 100%;
+        height: 100%;
+        
     }
     .scr-target img:hover {
-        opacity: 0.5;
-        zoom: 1.1;
         max-width: 300px;
         max-height: 300px; 
     }
+    .detail-box {
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        margin: auto;
+        
+    }
+    .box{
+        width: 40%;
+        margin: 2%;
+    }
+    
   
   @media screen and (min-width:960px) {
       .main img {
