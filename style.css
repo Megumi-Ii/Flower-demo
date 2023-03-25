@@ -7,7 +7,6 @@
     font-weight: lighter;
 }
 body {
-    height: 100%;
     width: 100%;
     overflow-x: hidden;
     display: flex;
@@ -79,7 +78,6 @@ h1 {
     letter-spacing: 3px;
     margin: 15px 30px 10px 30px;
 }
-
 .contents p, .ItemName, .price {
     margin: 10px 30px ;
     font-size: 0.7rem;
@@ -99,7 +97,6 @@ h1 {
 .view-more{
     margin: 60px auto 74px auto;
 }
-
 .more ,.view-more{
     width: 90%;
     border: solid 1px;
@@ -115,7 +112,6 @@ h1 {
     color: white;
 }
 
-
 h2 {
     font-size: 0.95rem;
     margin: 85px auto 50px auto;
@@ -125,36 +121,40 @@ h2 {
 .products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 98%;
+    margin: auto;
 }
-.scr-target {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0);
-    width: 236px;
-    height: 236px;
-    margin: 5%;
-    overflow: hidden;
-}
-.scr-target.is-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: 1s;
+
+.scr-target{
+   opacity: 0;
+   transform: translate3d(0, 30px, 0);
+   overflow: hidden;
+   width: 225px;
+   height: 205px;
 }
 .scr-target img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     transition: 0.7s;
     cursor: pointer;
-    flex-direction: row-reverse;
-    margin: 10%;
+    object-fit: cover;
+    padding: 0 10px;
   }
   .scr-target img:hover {
     opacity: 0.6;
     zoom: 1.1;
     overflow: hidden;
-    width: 236px;
-    height: 236px;
+    width: 240px;
+    height: 240px;
   }
+
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
+
  
 .detail-box ,.news{
     list-style: none;
@@ -427,13 +427,13 @@ h4 {
     transform: translateX(0); 
   }
   
-  @media screen and (max-width:392px) {
+  @media screen and (max-width:379px) {
+      
       .scr-target {
         width: 160px;
         height: 160px;
         overflow: hidden;
         margin: auto;
-      
     }
     .scr-target img {
         width: 100%;
@@ -442,7 +442,7 @@ h4 {
         transition: 0.7s;
         cursor: pointer;
         flex-direction: row-reverse;
-        margin: 10%;
+       
       }
       .scr-target img:hover {
         opacity: 0.6;
@@ -452,16 +452,39 @@ h4 {
         height: 160px;
       }
     }
+
    
-  @media screen and (min-width:550px) {
-    .scr-target img{
-        width: 100%;
-        height: 100%;
-        
+  @media screen and (min-width:680px) {
+    .products {
+        justify-content: center;
+    }
+    .scr-target{
+        width: 321px;
+        height: 291px;
+     }
+    .scr-target img {
+        padding: 0 15px;
     }
     .scr-target img:hover {
-        max-width: 300px;
-        max-height: 300px; 
+        width: 321px;
+        height: 321px;
+        overflow: hidden;
+    }
+    .about  {
+        width: 95%;
+        margin: auto;
+      }
+      .about img {
+        height: 380px;
+        margin-top: 8%;
+      }
+
+      .outline h1, .outline p {
+          font-size: 1.5rem;
+      }
+      .sentence {
+        width: 93%;
+     
     }
     .detail-box {
         display: flex;
@@ -483,7 +506,7 @@ h4 {
     }
     
   
-  @media screen and (min-width:960px) {
+  @media screen and (min-width:981px) {
       .main img {
           height: 100vh;
           right: 0;
@@ -503,8 +526,7 @@ h4 {
         left: 50%;
         margin: auto;
       }
-      .sentence
-      {
+      .sentence {
           position: absolute;
           width: 38%;
           left: 8%;
@@ -512,7 +534,7 @@ h4 {
       h1,.about p, .about .more{
           margin-left: 0%;
       }
-      .details {
+      .outline {
           margin-bottom: 16%;
           margin-top: -18%;
       }
@@ -524,27 +546,20 @@ h4 {
           width: 50%;
           margin-top: 10%;
       }
-      
-      .scr-target {
-        width: 300px;
-        height: 300px; 
-        overflow: hidden;
+    .products {
+        width: 90%;
+        display: flex;
         margin: auto;
+        justify-content: center;
     }
-    .scr-target img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 0.7s;
-        cursor: pointer;
-        flex-direction: row-reverse;
-        margin: 6%;
+    .scr-target {
+        width: 380px;
+        height: 350px;
     }
+    
     .scr-target img:hover {
-        opacity: 0.5;
-        zoom: 1.1;
-        max-width: 400px;
-        max-height: 400px; 
+        width: 380px;
+        height: 380px; 
     }
       .title{
           left: 11%;
@@ -556,12 +571,9 @@ h4 {
           margin-top: 25px;
           font-size: 0.8rem;
       }
-      .products {
-          display: flex;
-          flex-wrap: wrap;
-      }
+      
       .detail-box {
-      flex-wrap: wrap;
+          flex-wrap: wrap;
       }
 
       .detail-box,  .information {
@@ -583,5 +595,8 @@ h4 {
     .more {
         width: 30%;
         padding: 1.3%;
+    }
+    .news {
+        margin-left: 10%;
     }
 }}
