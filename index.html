@@ -15,22 +15,26 @@
             <li>Home</li>
             <li>About</li>
             <li>Category</li>
-            <p>- </p>
-            <p>- </p>
-            <p>- </p>
-            <p>- </p>
-            <p>- </p>
+            <li class="name">
+            <p>- grace</p>
+            <p>- grace dried flower</p>
+            <p>- mei dried flower</p>
+            <p>- mei</p>
+            <p>- luna</p>
             <p>- option</p>
             <p>- seasonal/期間限定</p>
+        </li>
             <li>News</li>
-            <li>Contact</li>
+            <li class="contact">Contact
+                <br>
             <img src="images/shopping.png">
-            <li>SEARCH</li>
-            <img src="images/resarching.png">
-
-            <p class="number">TEL - 042-xxx-xxxx</p>
-
-
+            </li>
+            <li class="search">SEARCH
+                <img src="images/resarching.png">
+                <li class="borderBottom"></li>
+                </li>
+            </li>
+            <li class="number">TEL - 042-xxx-xxxx</li>
           </ul>
     </header>
     <wrapper>
@@ -49,22 +53,18 @@
           </div>
         </div>
     </div>
-    
     <div class="main">
         <img src="images/top.jpeg" alt="">
         <div class="title"><p>花が叶える、夢もある</p></div>
         <div class="Eng-ver">There are dreams for flowers to come true.</div>
     </div>
-   
     <div class="contents">
         <div class="about">
         <img src="images/sub1.jpeg" alt="">
-        <div class="photo-list" id="">
-         
             <div class="sentence">
-    <div class="outline">
+    <div class="mainOutline">
         <h1>ABOUT</h1>
-        <p>eMMaとは?</p>
+        <a>eMMaとは?</a>
     </div>
             豊かな暮らしを育む一端として、“長く愛される花の文化を作りたい”という想いから多くの可能性を探り、
             レジンデコールを作り出しました。消費される世の中だからこそ、花から生まれるコミュニケーションや豊かな生活を大事にしてほしい。
@@ -74,9 +74,10 @@
     </div>
         </div>
         </div>
-  
+        <div class="productOutline">
         <h1>PRODUCTS</h1>
         <p>取り扱い商品一覧</p>
+        </div>
         <div class="products">
         <div class="photo-list" id="">
             <div class="scr-target">
@@ -243,15 +244,15 @@
             <div class="scr-target">
             <img src="images/pro24.jpeg" alt="" width="450px" height="450px">
             </div>
+        <div class="ItemBox">
             <div class="ItemName">rose バラ</div>
             <div class="price">¥99,999</div>
         </div>
+        </div>
     </div>
         <div class="view-more">VIEW MORE</div>
-
         <h2>現在取り扱っているブランドはこちら</h2>
         <div class="detail-box">
-            
             <div class="box"><a class="arrow"><p class="boreder"></p>grace</a></div>
             <div class="box"><a class="arrow"><p class="boreder"></p>grace dried flower</a></div>
             <div class="box"><a class="arrow"><p class="boreder"></p>mei dried flower</a></div>
@@ -274,7 +275,6 @@
                         </div>
                          <div class="border-height"></div>
                 <p>eMMa OPEN DAY　のお知らせ</p></li>
-
                 <li class="news-contents">
                     <div class="date"> 
                         2023<br>
@@ -282,7 +282,6 @@
                         </div>
                         <div class="border-height"></div>
                 <p>”冬のSALE”のお知らせ</p></li>
-
                 <li class="news-contents">
                     <div class="date"> 
                         2023<br>
@@ -290,7 +289,6 @@
                         </div>
                         <div class="border-height"></div>
                 <p>BASE 20％割引クーポン　明日まで</p></li>
-
                 <li class="news-contents">
                     <div class="date"> 
                         2023<br>
@@ -298,16 +296,13 @@
                     </div>
                         <div class="border-height"></div>
                 <p>10周年記念</p></li>
-
-                
                 <li class="news-contents">
                     <div class="date"> 
                         2023<br>
                         01.31
                         </div>
                         <div class="border-height"></div>
-                <p>しめ縄かざりの予約販売がスタートしました</p></li>
-
+                <p>"しめ縄かざり"の予約販売がスタートしました🎍</p></li>
                 <li class="news-contents">
                     <div class="date"> 
                         2023<br>
@@ -336,12 +331,10 @@
         rootMargin: '0px 0px',
         threshold: 0.2
     };
-    
     const observer = new IntersectionObserver(callback, options)
     targetArray.forEach(function (tgt) {
       observer.observe(tgt)
     });
-    
     function callback(entries) {
       entries.forEach(function(entry) {
         const target = entry.target;
@@ -352,15 +345,11 @@
     };
     });
     </script>
-    
- 
     </body>
     
     <footer>
-        <div class="logo-name"><img src="images/logoM.png" alt="">eMMa</div>
-            <div class="name">
-                <div class="img"></div>
-            </div>
+        <div class="logo-name">
+            <img src="images/logoM.png" alt="">eMMa</div>
            <div class="policy">
             <a>プライバシーポリシー</a>
             <a>特定商品取引法に基づく表記</a>
@@ -371,7 +360,5 @@
         </div>
             <div class="copyright">©︎2023 eMMa Ltd.</div>
         </div>
-        
     </footer>
-   
 </html>
