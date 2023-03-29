@@ -7,21 +7,17 @@
     font-weight: lighter;
     letter-spacing: 2.5px;
 }
-
 img {
     max-width: 100%;
 }
-
 body ,.header, .main img ,.about img ,.hamburger span,footer{
     width: 100%;
 }
 body {
     max-width: 1020px;
-    overflow-x: hidden;
-    display: flex;
 }
 .header {
-    height: 77px;
+    height: 76.5px;
     z-index: 3;
     background-color: white;
     position: relative;
@@ -143,15 +139,14 @@ body {
     object-fit: cover;
 }
 .main img {
-    height: 64vh;
+    height: 64.5vh;
     margin: 77px auto;
     background-attachment: fixed;
     transform: scale(-1, 1);
     position: relative;
 }
 .about img {
-    height: 27vh;
-    margin-top: 0px;
+    height: 30%;
     padding: 0 28px;
 }
 .title,.Eng-ver,h2,.detail-box a,h4,.border-height,.news ,footer{
@@ -159,14 +154,14 @@ body {
 } 
 .title {
     position: absolute;
-    left: 10%;
-    top: 29%;
+    left: 5%;
+    top: 27.7%;
     font-size: 1.3em;
 }
 .Eng-ver {
     position: absolute;
-    left: 10%;
-    top: 34%;
+    left: 5%;
+    top: 33%;
 }
 .slide-menu li,.Eng-ver,.productOutline p,.sentence,
 .detail-box a,h4,.date ,.news-contents p ,.top{
@@ -193,6 +188,39 @@ h1 {
     font-size: 0.7rem;
     color: gray;
 }
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-left: -1%;
+}
+.src-target {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+    overflow: hidden;
+    display: block;
+}.src-target.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
+.Item{
+    width: 40%;
+    margin: 3.2%;
+  }
+  .Item:hover ,.ItemName,.price {
+      cursor: pointer;
+  }
+  .Item-Img{
+    width: 102%;
+    padding-top: 102%;
+    transition: all, 0.8s;
+  }
+  .Item-Img:hover{
+      opacity: 0.6;
+      transform: scale(1.1);
+  }
 .ItemName {
     margin-top: 5%;
 }
@@ -229,48 +257,17 @@ h2 {
     margin: 85px auto 50px auto;
     text-align: center;
 }
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-}
-.scr-target {
-   opacity: 0;
-   transform: translate3d(0, 30px, 0);
-   overflow: hidden;
-   display: flex;
-   justify-content: space-between;
- 
-}
-.Item{
-    width: 30%;/*お好みで*/
-    
-  }
-  .Item-Img{
-    width: 100%;
-    padding-top: 100%;
-    margin: 10px;
-    
-  }
-  
 
-.scr-target.is-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: 1s;
-}
 .detail-box ,.news{
     list-style: none;
-    margin: 0 14%;
+    margin: 0 13.8%;
 }
-.detail-box a {
+.detail-box a,.story,.business {
     border: solid 0.3px;
     border-color:rgb(143, 142, 142);
     width: 100%;
-    padding: 29px 20px;
-    margin: 3% auto;
+    padding: 31px 20px;
+    margin: 2.8% auto;
     color: black;
     transition: .3s;
 }
@@ -296,8 +293,8 @@ h2 {
     border: solid 1px;
     border-color:black;
     width: 72%;
-    padding: 5%;
-    margin: 16px auto 20px auto;
+    padding: 31px 20px;
+    margin: 2.8% auto;
     font-size: 0.7rem;
     text-align: center;
     transition: 0.3s;
@@ -425,15 +422,10 @@ h4 {
 .arrow:hover::after{
     right: 10px;
 }
-.fade {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 1.5s, transform 1s;
-}.fade.active {
-	opacity: 1;
-	transform: translateY(0px);
-}
 
+  
+
+/*
   @media screen and (max-width:379px) {
       .scr-target {
         width: 160px;
