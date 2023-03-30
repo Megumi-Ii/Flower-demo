@@ -5,16 +5,16 @@
     box-sizing: border-box;
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
     font-weight: lighter;
-    letter-spacing: 2.5px;
+    letter-spacing: 2.26px;
 }
-img {
-    max-width: 100%;
-}
+
 body ,.header, .main img ,.about img ,.hamburger span,footer{
     width: 100%;
 }
 body {
-    max-width: 1020px;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
 }
 .header {
     height: 76.5px;
@@ -145,10 +145,6 @@ body {
     transform: scale(-1, 1);
     position: relative;
 }
-.about img {
-    height: 30%;
-    padding: 0 28px;
-}
 .title,.Eng-ver,h2,.detail-box a,h4,.border-height,.news ,footer{
     opacity: 0.6;
 } 
@@ -163,27 +159,33 @@ body {
     left: 5%;
     top: 33%;
 }
-.slide-menu li,.Eng-ver,.productOutline p,.sentence,
+.about{
+    margin: auto 4.8%;
+}
+.about img {
+    min-height: 250px;
+}
+.slide-menu li,.Eng-ver,.mainOutline a,.productOutline p,.sentence,
 .detail-box a,h4,.date ,.news-contents p ,.top{
     font-size: 0.72rem;
 }
-.mainOutline{
-    margin: auto 0 30px -20px; 
+.mainOutline h1 {
+    margin: 3% auto 0.5% auto;
+    font-size: 1.6rem;
 }
-.mainOutline a {
-    margin-left: 20px;
+.sentence {
+    margin:  5% auto 8% auto;
+    line-height: 20px;
+    color: rgb(39, 39, 39);
 }
-h1 {
-    font-size: 1.5rem;
-    margin: 15px 30px 10px 20px;
+.productOutline {
+    margin: 5% ;
+    }
+.productOutline h1 {
+    margin-bottom: 2%;
+    font-size: 1.6rem;
 }
-.productOutline{
-    margin: auto 0 30px 20px;
-}
-.productOutline p {
-    margin-left: 20px;
-}
-.contents p, .ItemName, .price{
+.ItemName, .price{
     margin: 10px ;
     font-size: 0.7rem;
     color: gray;
@@ -193,7 +195,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-left: -1%;
 }
 .src-target {
 	opacity: 0;
@@ -206,15 +207,15 @@ h1 {
 	transform: translateY(0px);
 }
 .Item{
-    width: 40%;
-    margin: 3.2%;
+    width: 42.8%;
+    margin: 2.2%;
   }
   .Item:hover ,.ItemName,.price {
       cursor: pointer;
   }
   .Item-Img{
-    width: 102%;
-    padding-top: 102%;
+    width: 100%;
+    padding-top: 96%;
     transition: all, 0.8s;
   }
   .Item-Img:hover{
@@ -225,28 +226,25 @@ h1 {
     margin-top: 5%;
 }
 .price {
-    margin-bottom: 15%;
+    margin-bottom: 4%;
 }
-.sentence {
-    width: 88%;
-    margin:  6% auto;
-    line-height: 22px;
-}
-.more {
-    margin: 6% auto 14% auto;
-}
-.view-more{
-    margin: 60px auto 74px auto;
-}
-.more ,.view-more{
+.view-more ,.news .and-more{
     width: 90%;
+    margin: 6%  auto;
+}
+.about .and-more {
+    margin: 0  auto 15%  auto;
+}
+.news .and-more {
+    margin: 8% auto 14% auto;
+}
+.and-more ,.view-more{
     border: solid 1px;
     text-align: center;
-    padding: 2.7%;
+    padding: 2.8%;
     font-size: 0.7rem;
     transition: 0.2s;
     cursor: pointer;
-    margin-bottom: 18%;
 }
 .more:hover ,.view-more:hover  {
     background: black;
@@ -257,6 +255,7 @@ h2 {
     margin: 85px auto 50px auto;
     text-align: center;
 }
+
 .detail-box ,.news{
     list-style: none;
     margin: 0 13.8%;
@@ -292,8 +291,8 @@ h2 {
     border: solid 1px;
     border-color:black;
     width: 72%;
-    padding: 31px 20px;
-    margin: 2.8% auto;
+    padding: 5% 15%;
+    margin: 2.4% auto;
     font-size: 0.7rem;
     text-align: center;
     transition: 0.3s;
@@ -306,6 +305,9 @@ h2 {
 }
 .business {
     margin-top: 30px;
+}
+.sentence .and-more {
+    margin-top: 6%;
 }
 h3 {
     padding: 100px 20px 8px 30px;
