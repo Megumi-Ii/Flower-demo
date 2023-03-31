@@ -12,7 +12,7 @@ body ,.header, .main img ,.about img ,.hamburger span,footer{
     width: 100%;
 }
 body {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -29,12 +29,12 @@ body {
 }
 .logo img{
     width: 40px;
-    margin: 5px 30px 0 30px;
+    margin: 5px 30px 0 5%;
 }
 .name {
     font-size: 0.8rem;
     color: #0097b2;
-    margin: 0 30px;
+    margin: 0 5%;
 }
 .click {
     display: flex;
@@ -57,7 +57,7 @@ body {
   .hamburger{
     width: 18px;
     height: 15px;
-    right: 20px;
+    right: 18px;
     position: relative;
     position: fixed;
     top: 33px;
@@ -241,7 +241,7 @@ body {
 .and-more ,.view-more{
     border: solid 1px;
     text-align: center;
-    padding: 2.8%;
+    padding: 15px;
     font-size: 0.7rem;
     transition: 0.2s;
     cursor: pointer;
@@ -264,7 +264,7 @@ h2 {
     border: solid 0.3px;
     border-color:rgb(143, 142, 142);
     width: 100%;
-    padding: 31px 20px;
+    padding: 30px 20px;
     margin: 2.8% auto;
     color: black;
     transition: .3s;
@@ -285,14 +285,14 @@ h2 {
     width: 30px;
 }
 .information {
-    padding-top: 70px;
+    margin: 17% 13.8%;
 }
 .story,.business {
     border: solid 1px;
     border-color:black;
-    width: 72%;
-    padding: 5% 15%;
-    margin: 2.4% auto;
+    width: 100%;
+    padding: 25px 20px;
+    margin: 30px auto;
     font-size: 0.7rem;
     text-align: center;
     transition: 0.3s;
@@ -303,14 +303,12 @@ h2 {
     background-color: black;
     color: white;
 }
-.business {
-    margin-top: 30px;
-}
+
 .sentence .and-more {
     margin-top: 6%;
 }
 h3 {
-    padding: 100px 20px 8px 30px;
+    padding: 46px 20px 8px 30px;
     font-size: 1.6rem;
     font-family: "游明朝",  serif;
 }
@@ -424,57 +422,11 @@ h4 {
     right: 10px;
 }
 
+  @media screen and (min-width:580px) {
   
-
-/*
-  @media screen and (max-width:379px) {
-      .scr-target {
-        width: 160px;
-        height: 160px;
-        overflow: hidden;
-        margin: auto;
-    }
-      .scr-target img:hover {
-        width: 160px;
-        height: 160px;
-      }
-    }
-  @media screen and (min-width:730px) {
-    .more, .view-more{
-        padding: 1.7%;
-    }
-    .products {
-        justify-content: center;
-    }
-    .scr-target{
-        width: 350px;
-        height: 350px;
-     }
-    .scr-target img {
-        padding: 0 15px;
-    }
-    .scr-target img:hover {
-        width: 350px;
-        height: 350px;
-        overflow: hidden;
-    }
-    .about  {
-        width: 95%;
-        margin: auto;
-      }
-      .about img {
-        height: 380px;
-        margin-top: 8%;
-      }
-      .outline p {
-        font-size: 1.5rem;
-      }
-      .sentence {
-        width: 93%;
-    }
     .detail-box, .information{
         display: flex;
-        width: 80%;
+        width: 90%;
         flex-wrap: wrap;
         margin: 0 auto;
     }
@@ -482,38 +434,15 @@ h4 {
         margin: 0 auto;
     }
     .box{
-        width: 46%;
-        margin: 2%;
+        width: 45%;
+        margin: 0.8% 2%;
     }
     .arrow::before{
         width: 15%;
     }
-  @media screen and (min-width:981px) {
-      .main img {
-          height: 100vh;
-          right: 0;
-          padding-right: 20%;
-      }
-      .about {
-          margin: 30% auto;
-         
-          width: 82%;
-          display: flex;
-          position: relative;
-          align-items: center;
-      }
-      .about img {
-        width: 55%;
-        height: 480px;
-        position: absolute;
-        left: 48%;
-        margin: auto;
-      }
-      .sentence {
-          position: absolute;
-          width: 45%;
-          opacity: .7;
-      }
+}
+  @media screen and (min-width:801px) {
+      
       h1,.about p, .about .more{
           margin-left: 0%;
       }
@@ -554,6 +483,7 @@ h4 {
           top: 58%;
           font-size: 0.8rem;
       }
+      @media screen and (min-width:1001px) {
       .detail-box {
           flex-wrap: wrap;
       }
@@ -600,4 +530,30 @@ h4 {
         right: 5%; 
         top: 25px;
     }
-}}
+}
+@media screen and (min-width:1021px) {
+    .main img {
+        height: 100vh;
+        right: 0;
+        padding-right: 20%;
+    }
+    .about {
+        margin: 30% auto;
+        width: 82%;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    .about img {
+      width: 55%;
+      height: 480px;
+      position: absolute;
+      left: 48%;
+      margin: auto;
+    }
+    .sentence {
+        position: absolute;
+        width: 45%;
+        opacity: .7;
+    }
+  }}
