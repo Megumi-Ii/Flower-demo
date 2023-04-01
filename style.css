@@ -17,7 +17,7 @@ body {
     padding: 0;
 }
 .header {
-    height: 76.5px;
+    height: 75.8px;
     z-index: 3;
     background-color: white;
     position: relative;
@@ -139,8 +139,8 @@ body {
     object-fit: cover;
 }
 .main img {
-    height: 64.5vh;
-    margin: 77px auto;
+    height: 64.7vh;
+    margin: 76px auto;
     background-attachment: fixed;
     transform: scale(-1, 1);
     position: relative;
@@ -216,7 +216,7 @@ body {
   .Item-Img{
     width: 100%;
     padding-top: 96%;
-    transition: all, 0.8s;
+    transition: all, 0.6s;
   }
   .Item-Img:hover{
       opacity: 0.6;
@@ -267,10 +267,11 @@ h2 {
     padding: 30px 20px;
     margin: 2.8% auto;
     color: black;
-    transition: .3s;
+    transition: .1s;
 }
 .detail-box a:hover {
     padding-left: 40px;
+    border: solid 1px;
 }
 .detail-box p{
     position: absolute;
@@ -285,7 +286,7 @@ h2 {
     width: 30px;
 }
 .information {
-    margin: 17% 13.8%;
+    margin: 90px 13.8%;
 }
 .story,.business {
     border: solid 1px;
@@ -303,7 +304,6 @@ h2 {
     background-color: black;
     color: white;
 }
-
 .sentence .and-more {
     margin-top: 6%;
 }
@@ -423,79 +423,70 @@ h4 {
 }
 
   @media screen and (min-width:580px) {
-  
-    .detail-box, .information{
+    .detail-box{
         display: flex;
         width: 90%;
         flex-wrap: wrap;
         margin: 0 auto;
     }
     .box:last-child {
-        margin: 0 auto;
+        margin:  auto;
     }
     .box{
         width: 45%;
         margin: 0.8% 2%;
     }
+    
     .arrow::before{
         width: 15%;
     }
 }
   @media screen and (min-width:801px) {
-      
       h1,.about p, .about .more{
           margin-left: 0%;
       }
-      .outline {
-          margin-bottom: 16%;
-          margin-top: -17%;
+      .header {
+          height: 94px;
       }
       .contents {
           width: 98%;
           margin: auto;
       }
-      .outline p {
-          font-size: .7rem;
-      }
       .about .more {
           width: 50%;
           margin-top: 10%;
       }
-    .products {
-        width: 96%;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-    }
-    .scr-target {
-        width: 390px;
-        height: 390px;
-    }
-    .scr-target img:hover {
-        width: 390px;
-        height: 390px; 
-    }
       .title{
-          top: 50%;
-          font-size: 2rem;
+          top: 30%;
       }
       .Eng-ver {
-          top: 58%;
-          font-size: 0.8rem;
+          top: 35%;
       }
+      .information{
+        display: flex;
+        width: 90%;
+        margin: 70px auto;
+    }
+    .story, .business{
+        width: 45%;
+        font-size: 1rem;
+        padding: 36px;
+    }
       @media screen and (min-width:1001px) {
-      .detail-box {
-          flex-wrap: wrap;
-      }
+        .products {
+            width: 100%;
+            display: flex;
+            margin: auto;
+           
+        }
+        .Item{
+            width: 25%;
+            margin: 1.4%; 
+          }
+       
     .box{
         width: 29%;
-        margin: 2%;
-    }
-    .story ,.business {
-        width: 46%;
-        padding: 3% 5%;
-        margin: 2%;
-        font-size: 1rem;
+        margin: 6px auto;
     }
     .more,.view-more {
         width: 30%;
