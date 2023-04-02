@@ -7,7 +7,6 @@
     font-weight: lighter;
     letter-spacing: 2.26px;
 }
-
 body ,.header, .main img ,.about img ,.hamburger span,footer{
     width: 100%;
 }
@@ -228,10 +227,6 @@ body {
 .price {
     margin-bottom: 4%;
 }
-.view-more ,.news .and-more{
-    width: 90%;
-    margin: 6%  auto;
-}
 .about .and-more {
     margin: 0  auto 15%  auto;
 }
@@ -255,7 +250,6 @@ h2 {
     margin: 85px auto 50px auto;
     text-align: center;
 }
-
 .detail-box ,.news{
     list-style: none;
     margin: 0 13.8%;
@@ -436,7 +430,6 @@ h4 {
         width: 45%;
         margin: 0.8% 2%;
     }
-    
     .arrow::before{
         width: 15%;
     }
@@ -467,17 +460,34 @@ h4 {
         width: 90%;
         margin: 70px auto;
     }
+    .ItemName {
+        margin: 14px auto 0 auto;
+    }
+    .price  {
+        margin: 5px auto 5% auto;
+    }
     .story, .business{
         width: 45%;
         font-size: 1rem;
         padding: 36px;
     }
+    .and-more {
+      width: 40%;
+    }
+    .view-more {
+        margin: 5% auto 8% auto;
+    }
       @media screen and (min-width:1001px) {
+        .about {
+            width: 80%;
+            text-align: center;
+           
+        }
         .products {
             width: 100%;
             display: flex;
             margin: auto;
-           
+           fendi
         }
         .Item{
             width: 25%;
@@ -488,7 +498,7 @@ h4 {
         width: 29%;
         margin: 6px auto;
     }
-    .more,.view-more {
+    .view-more {
         width: 30%;
         padding: 1.2%;
     }
