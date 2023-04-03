@@ -38,7 +38,7 @@ body {
 .click {
     display: flex;
     position: absolute;
-    right: 50px;
+    right: 45px;
     top: 15px;
 }
 .click img {
@@ -54,9 +54,9 @@ body {
     align-items: center;
   }
   .hamburger{
-    width: 18px;
+    width: 16px;
     height: 15px;
-    right: 18px;
+    right: 17px;
     position: relative;
     position: fixed;
     top: 33px;
@@ -162,7 +162,7 @@ body {
     margin: auto 4.8%;
 }
 .about img {
-    min-height: 250px;
+    min-height: 180px;
 }
 .slide-menu li,.Eng-ver,.mainOutline a,.productOutline p,.sentence,
 .detail-box a,h4,.date ,.news-contents p ,.top{
@@ -173,15 +173,16 @@ body {
     font-size: 1.6rem;
 }
 .sentence {
-    margin:  5% auto 8% auto;
+    margin:  5% auto 30px auto;
     line-height: 20px;
     color: rgb(39, 39, 39);
+    letter-spacing: 2.3px;
 }
 .productOutline {
-    margin: 5% ;
+    margin: 80px auto 20px 5% ;
     }
 .productOutline h1 {
-    margin-bottom: 2%;
+    margin-bottom: 6px;
     font-size: 1.6rem;
 }
 .ItemName, .price{
@@ -229,9 +230,11 @@ body {
 }
 .about .and-more {
     margin: 0  auto 15%  auto;
+    width: 100%;
 }
 .news .and-more {
-    margin: 8% auto 14% auto;
+    margin:  26px auto ;
+    width: 90%;
 }
 .and-more ,.view-more{
     border: solid 1px;
@@ -240,14 +243,19 @@ body {
     font-size: 0.7rem;
     transition: 0.2s;
     cursor: pointer;
+    margin: auto;
+}
+.view-more {
+    width: 90%;
+    margin:  34px auto ;
 }
 .more:hover ,.view-more:hover  {
     background: black;
     color: white;
 }
 h2 {
-    font-size: 0.95rem;
-    margin: 85px auto 50px auto;
+    font-size: 1rem;
+    margin: 92px auto 50px auto;
     text-align: center;
 }
 .detail-box ,.news{
@@ -259,7 +267,7 @@ h2 {
     border-color:rgb(143, 142, 142);
     width: 100%;
     padding: 30px 20px;
-    margin: 2.8% auto;
+    margin: 10px auto;
     color: black;
     transition: .1s;
 }
@@ -280,15 +288,15 @@ h2 {
     width: 30px;
 }
 .information {
-    margin: 90px 13.8%;
+    margin: 88px 13.8%;
 }
 .story,.business {
     border: solid 1px;
     border-color:black;
     width: 100%;
     padding: 25px 20px;
-    margin: 30px auto;
-    font-size: 0.7rem;
+    margin: 29px auto;
+    font-size: 0.8rem;
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
@@ -298,9 +306,7 @@ h2 {
     background-color: black;
     color: white;
 }
-.sentence .and-more {
-    margin-top: 6%;
-}
+
 h3 {
     padding: 46px 20px 8px 30px;
     font-size: 1.6rem;
@@ -337,11 +343,11 @@ h4 {
 .line-top {
     border-right: solid 1px black;
     height: 60px;
-    margin: -2% 50%;
+    margin: 60px 50% 0 auto;
 }
 .top {
     text-align: center;
-    margin: 3.5% auto 5% auto;
+    margin: 10px auto 23px auto;
 }
 .logo-name{
     text-align: center;
@@ -369,7 +375,7 @@ h4 {
     margin: 0 auto;
     font-size: 0.6rem;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 8%;
 }
 .arrow{
     display:inline-block;
@@ -417,6 +423,15 @@ h4 {
 }
 
   @media screen and (min-width:580px) {
+    .click {
+        right: 6.5%;
+        top: 25px;
+    }
+    .hamburger{
+        width: 16px;
+        right: 3%;
+        top: 45px;
+      }
     .detail-box{
         display: flex;
         width: 90%;
@@ -428,16 +443,25 @@ h4 {
     }
     .box{
         width: 45%;
-        margin: 0.8% 2%;
+        margin: auto 2%;
     }
     .arrow::before{
         width: 15%;
     }
+    .story, .business{
+        padding: 30px;
+    }
+    .Item{
+        width: 44%;
+        margin: 2%;
+      }
+    h2 {
+        margin-bottom: 4.6%;
+        font-size: 1rem;
+    }
 }
   @media screen and (min-width:801px) {
-      h1,.about p, .about .more{
-          margin-left: 0%;
-      }
+      
       .header {
           height: 94px;
       }
@@ -467,9 +491,9 @@ h4 {
         margin: 5px auto 5% auto;
     }
     .story, .business{
-        width: 45%;
+        width: 46%;
         font-size: 1rem;
-        padding: 36px;
+        padding: 32px;
     }
     .and-more {
       width: 40%;
@@ -478,19 +502,17 @@ h4 {
         margin: 5% auto 8% auto;
     }
       @media screen and (min-width:1001px) {
-        .about {
-            width: 80%;
-            text-align: center;
-           
-        }
+        
         .products {
             width: 100%;
             display: flex;
             margin: auto;
-           fendi
         }
+        .productOutline {
+            margin: 0 auto 50px 9% ;
+            }
         .Item{
-            width: 25%;
+            width: 25.8%;
             margin: 1.4%; 
           }
        
@@ -499,8 +521,9 @@ h4 {
         margin: 6px auto;
     }
     .view-more {
+        margin: 3% auto;
         width: 30%;
-        padding: 1.2%;
+        padding: 1.4%;
     }
     .news {
         margin-left: 3%;
@@ -518,7 +541,7 @@ h4 {
     }
     .policy {
         position: absolute;
-        left: 18%;
+        left: 23%;
         bottom: -25px;
     }
     .SNS {
@@ -534,9 +557,16 @@ h4 {
 }
 @media screen and (min-width:1021px) {
     .main img {
-        height: 100vh;
+        height: 71.3vh;
         right: 0;
         padding-right: 20%;
+    }
+    .title{
+        top: 35%;
+        font-size: 2rem;
+    }
+    .Eng-ver {
+        top: 43.2%;
     }
     .about {
         margin: 30% auto;
