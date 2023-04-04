@@ -91,9 +91,9 @@ body {
     z-index: 6;
 }
 .slide-menu li{
-  color: black;
-  line-height: 300%;
-  margin-left: 16%;
+    color: black;
+    line-height: 300%;
+    margin-left: 16%;
 }
 .slide-menu p{
     font-size: 0.5rem;
@@ -138,7 +138,7 @@ body {
     object-fit: cover;
 }
 .main img {
-    height: 64.7vh;
+    height: 62.7vh;
     margin: 76px auto;
     background-attachment: fixed;
     transform: scale(-1, 1);
@@ -150,13 +150,13 @@ body {
 .title {
     position: absolute;
     left: 5%;
-    top: 27.7%;
+    top: 26.3%;
     font-size: 1.3em;
 }
 .Eng-ver {
     position: absolute;
     left: 5%;
-    top: 33%;
+    top: 243px;
 }
 .about{
     margin: auto 4.8%;
@@ -164,13 +164,20 @@ body {
 .about img {
     min-height: 180px;
 }
+.scroll {
+    display: none;
+}
 .slide-menu li,.Eng-ver,.mainOutline a,.productOutline p,.sentence,
 .detail-box a,h4,.date ,.news-contents p ,.top{
     font-size: 0.72rem;
 }
+h1 {
+    font-size: 1.5em;
+    letter-spacing: 3.6px;
+}
 .mainOutline h1 {
     margin: 3% auto 0.5% auto;
-    font-size: 1.6rem;
+ 
 }
 .sentence {
     margin:  5% auto 30px auto;
@@ -183,7 +190,7 @@ body {
     }
 .productOutline h1 {
     margin-bottom: 6px;
-    font-size: 1.6rem;
+
 }
 .ItemName, .price{
     margin: 10px ;
@@ -211,7 +218,7 @@ body {
     margin: 2.2%;
   }
   .Item:hover ,.ItemName,.price {
-      cursor: pointer;
+    cursor: pointer;
   }
   .Item-Img{
     width: 100%;
@@ -219,8 +226,8 @@ body {
     transition: all, 0.6s;
   }
   .Item-Img:hover{
-      opacity: 0.6;
-      transform: scale(1.1);
+    opacity: 0.6;
+    transform: scale(1.1);
   }
 .ItemName {
     margin-top: 5%;
@@ -249,7 +256,7 @@ body {
     width: 90%;
     margin:  34px auto ;
 }
-.more:hover ,.view-more:hover  {
+.and-more:hover ,.view-more:hover  {
     background: black;
     color: white;
 }
@@ -306,7 +313,6 @@ h2 {
     background-color: black;
     color: white;
 }
-
 h3 {
     padding: 46px 20px 8px 30px;
     font-size: 1.6rem;
@@ -345,19 +351,24 @@ h4 {
     height: 60px;
     margin: 60px 50% 0 auto;
 }
+.line-top::after:hover {
+    border-right: solid 1px black;
+    height: 60px;
+    margin: 50px 50% 0 auto;
+}
 .top {
     text-align: center;
-    margin: 10px auto 23px auto;
+    margin: 2% auto 6% auto;
 }
 .logo-name{
     text-align: center;
     font-size: 2.1rem;
     color:#0097b2;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 .logo-name img {
     width: 40px;
-    margin: 5px auto;
+    margin: 0px auto;
 }
 .policy {
     font-size: 0.6rem;
@@ -366,7 +377,7 @@ h4 {
 .SNS {
     display: flex;
     width: 100px;
-    margin: 20px auto;  
+    margin: 18px auto;  
 }
 .SNS img {
     margin: 10px;
@@ -421,8 +432,7 @@ h4 {
 .arrow:hover::after{
     right: 10px;
 }
-
-  @media screen and (min-width:580px) {
+  @media screen and (min-width:580px) {  
     .click {
         right: 6.5%;
         top: 25px;
@@ -461,7 +471,15 @@ h4 {
     }
 }
   @media screen and (min-width:801px) {
-      
+    .logo img{
+        width: 50px;
+        margin: 5px 30px 0 5%;
+    }
+    .name {
+        font-size: 1.2rem;
+        color: #0097b2;
+        margin: 0 4.5%;
+    }
       .header {
           height: 94px;
       }
@@ -474,10 +492,10 @@ h4 {
           margin-top: 10%;
       }
       .title{
-          top: 30%;
+          top: 34.2%;
       }
       .Eng-ver {
-          top: 35%;
+          top: 39.4%;
       }
       .information{
         display: flex;
@@ -499,92 +517,141 @@ h4 {
       width: 40%;
     }
     .view-more {
-        margin: 5% auto 8% auto;
+      margin: 5% auto 8% auto;
     }
-      @media screen and (min-width:1001px) {
-        
-        .products {
-            width: 100%;
-            display: flex;
-            margin: auto;
+@media screen and (min-width:1021px) {
+    .main img {
+        height: 80%;
+        right: 0;
+        padding-right: 19%;
+        position: relative;
+    }
+    .scroll,.scroll-line {
+        display: block;
+        font-size: 0.3rem;
+        left: 12%;
+        writing-mode: vertical-rl;
+        position: absolute;
+        opacity: .4;
+        bottom: 27%;
+    }
+    .scroll-line  {
+        left: 12.4%;
+    }
+    .scroll-line::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 5%;
+        width: 1px;
+        height: 50px;
+        background: rgb(151, 148, 148);
+        animation: pathmove 1.6s ease-in-out infinite;
+        opacity:0.1;
+      }
+      @keyframes pathmove{
+        0%{
+          height:0;
+          top:10px;
+          opacity: 0;
         }
-        .productOutline {
-            margin: 0 auto 50px 9% ;
-            }
-        .Item{
-            width: 25.8%;
-            margin: 1.4%; 
-          }
-       
+        50%{
+          height:60px;
+          opacity: 1;
+        }
+        100%{
+          height:0;
+          top:50px;
+          opacity: 0;
+        }
+      }
+    .title{
+        top: 47%;
+        margin-left: 5.7%;
+        font-size: 2rem;
+    }
+    .Eng-ver {
+        top: 56.2%;
+        margin-left: 5.7%;
+    }
+    
+    .about {
+        width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5% auto  10% auto;
+        position: relative;
+    }
+    .mainOutline {
+        position: absolute;
+        left: 0%;
+    }
+    .about img {
+      width: 50%;
+      height: 460px;
+    }
+    .sentence {
+        width: 45%;
+        opacity: .7;
+        position: absolute;
+        left: 0;
+        top: 20%;
+    }
+    .productOutline {
+        margin: 0 auto 50px 9% ;
+    }
+    .about .and-more {
+        width: 25%;
+        position: absolute;
+        bottom: -5%;
+        left: 0%;
+    }
+    .products {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .Item{
+        width: 25.8%;
+        margin: 1.4%; 
+    } 
     .box{
         width: 29%;
         margin: 6px auto;
     }
-    .view-more {
+    .news {
+        margin-left: 3%;
+    }
+    .view-more, .news .and-more{
         margin: 3% auto;
         width: 30%;
         padding: 1.4%;
     }
-    .news {
-        margin-left: 3%;
-    }
     footer {
-        display: flex;
-        height: auto;
+        height: 80px;
         position: relative;
-        margin-bottom: 7%;
+    }
+    .footer-block {
+        display: flex;
+        width: 100%;
     }
     .logo-name {
         position: absolute;
-        left: 5%;
-        top: -20px;
+        margin-top: -20px;
+        margin-left: 5%;
     }
     .policy {
         position: absolute;
         left: 23%;
-        bottom: -25px;
+        margin-top: -10px;
     }
-    .SNS {
+    .SNS-block{
         position: absolute;
-        right: 4%;
-        top: -30px;
+        right: 0;
+        bottom: 45px;
+        margin-right: 5%;
     }
     .copyright {
-        position: absolute;
-        right: 5%; 
-        top: 25px;
-    }
-}
-@media screen and (min-width:1021px) {
-    .main img {
-        height: 71.3vh;
-        right: 0;
-        padding-right: 20%;
-    }
-    .title{
-        top: 35%;
-        font-size: 2rem;
-    }
-    .Eng-ver {
-        top: 43.2%;
-    }
-    .about {
-        margin: 30% auto;
-        width: 82%;
-        display: flex;
-        position: relative;
-        align-items: center;
-    }
-    .about img {
-      width: 55%;
-      height: 480px;
-      position: absolute;
-      left: 48%;
-      margin: auto;
-    }
-    .sentence {
-        position: absolute;
-        width: 45%;
-        opacity: .7;
+       margin-top: -20px;
     }
   }}
