@@ -238,12 +238,13 @@ h1 {
 .about .and-more {
     margin: 0  auto 15%  auto;
     width: 100%;
+    text-align: center;
 }
-.news .and-more {
+.andMore {
     margin:  26px auto ;
     width: 90%;
 }
-.and-more ,.view-more{
+.and-more p,.view-more p,.andMore p{
     border: solid 1px;
     text-align: center;
     padding: 15px;
@@ -256,7 +257,7 @@ h1 {
     width: 90%;
     margin:  34px auto ;
 }
-.and-more:hover ,.view-more:hover  {
+.and-more p:hover ,.view-more p:hover,.andMore p:hover  {
     background: black;
     color: white;
 }
@@ -313,38 +314,38 @@ h2 {
     background-color: black;
     color: white;
 }
-h3 {
-    padding: 46px 20px 8px 30px;
+h3 p{
+    padding: 46px 20px 8px 25px;
+    letter-spacing: 3px;
     font-size: 1.6rem;
     font-family: "游明朝",  serif;
 }
 h4 {
-    padding: 0 20px 30px 30px;
+    padding: 0 20px 30px 25px;
     font-family: "ヒラギノ明朝 ProN W3",  serif;
+}
+.news {
+    margin-left: 8.7%;
 }
 .news-contents{
     display: flex;
-    margin-left: 55px;
+    margin-left: 0;
 }
 .date {
     line-height: 22px;
     margin-bottom: 30px;
-    text-align: center;
+    font-size: 0.7rem;
 }
-.news {
-    margin: auto;
-    margin-top: 2%;
+.news-contents .fadeIn {
+    padding-top: 1%;
 }
-.news-contents p {
-    line-height: 18px;
-    font-size: 0.75rem;
-    width: 45%;
-    color: black;
+.news-contents .fadeIn a {
+    font-size: 0.9rem;
 }
-.border-height {
+.border-height p{
     border-right: solid 1px gray;
     height: 42px;
-    margin: 0px 20px;
+    margin: auto 22px;
 }
 .line-top {
     border-right: solid 1px black;
@@ -432,6 +433,25 @@ h4 {
 .arrow:hover::after{
     right: 10px;
 }
+  .fadeIn {
+    opacity: 0;
+  }
+  .fadeIn.active {
+    opacity: 1;
+    animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+      transition-duration: .7s;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+      transition-duration: .7s;
+    }
+  }
   @media screen and (min-width:580px) {  
     .click {
         right: 6.5%;
@@ -513,7 +533,7 @@ h4 {
         font-size: 1rem;
         padding: 32px;
     }
-    .and-more {
+    .and-more,.andMore {
       width: 40%;
     }
     .view-more {
@@ -574,7 +594,6 @@ h4 {
         top: 56.2%;
         margin-left: 5.7%;
     }
-    
     .about {
         width: 80%;
         display: flex;
@@ -622,7 +641,7 @@ h4 {
     .news {
         margin-left: 3%;
     }
-    .view-more, .news .and-more{
+    .view-more, .andMore{
         margin: 3% auto;
         width: 30%;
         padding: 1.4%;

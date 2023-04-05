@@ -55,23 +55,25 @@
     </div>
     <div class="main">
         <img src="images/top.jpeg" alt="">
-        <div class="title"><p>花が叶える、夢もある</p></div>
-        <div class="Eng-ver">There are dreams for flowers to come true.</div>
-        <div class="scroll">scroll </div><div class="scroll-line"></div>
+        <div class="title"><p class="fadeIn">花が叶える、夢もある</p></div>
+        <div class="Eng-ver"><p class="fadeIn">There are dreams for flowers to come true.</p></div>
     </div>
-    
         <div class="about">
         <img src="images/sub1.jpeg" alt="" >
     <div class="mainOutline">
-        <h1>ABOUT</h1>
-        <a>eMMaとは?</a>
+        
+        <h1><p class="fadeIn">ABOUT</p></h1>
+        <p class="fadeIn"><a>eMMaとは?</a></p>
+        </p>
     </div>
     <div class="sentence">
+        <p class="fadeIn">
             豊かな暮らしを育む一端として、“長く愛される花の文化を作りたい”という想いから多くの可能性を探り、
             レジンデコールを作り出しました。消費される世の中だからこそ、花から生まれるコミュニケーションや豊かな生活を大事にしてほしい。
             その時間が長くあり続けてほしい。そんな想いを込めて、花にまつわる文化を作り出しています。
-            </div>
-            <div class="and-more">and more...</div>
+        </p>
+    </div>
+            <div class="and-more"><p class="fadeIn">and more...</p></div>
     </div>
         </div>
         <div class="productOutline">
@@ -272,7 +274,7 @@
             </div>
              </div>
        
-        <div class="view-more">VIEW MORE</div>
+        <div class="view-more"><p class="fadeIn">VIEW MORE</p></div>
         <h2>現在取り扱っているブランドはこちら</h2>
         <div class="detail-box">
             <div class="box"><a class="arrow"><p class="boreder"></p>grace</a></div>
@@ -287,58 +289,92 @@
             <div class="story">eMMaにまつわるSTORY</div>
             <div class="business">事業展開</div>
         </div>
-        <div class="news">
-            <h3>NEWS</h3>
-            <h4>お知らせ</h4>
+            <h3><p class="fadeIn">NEWS</p></h3>
+            <h4><p class="fadeIn">お知らせ</p></h4>
+            <div class="news">
                 <li class="news-contents">
                     <div class="date"> 
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                         </div>
-                         <div class="border-height"></div>
-                <p>eMMa OPEN DAY　のお知らせ</p></li>
+                         <div class="border-height"><p class="fadeIn"></p></div>
+                         <p class="fadeIn"><a>eMMa OPEN DAYのお知らせ</a></p></li>
                 <li class="news-contents">
                     <div class="date"> 
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                         </div>
-                        <div class="border-height"></div>
-                <p>”冬のSALE”のお知らせ</p></li>
+                        <div class="border-height"><p class="fadeIn"></p></div>
+                        <p class="fadeIn"><a>”冬のSALE”のお知らせ</a></p></li>
                 <li class="news-contents">
-                    <div class="date"> 
+                    <div class="date">
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                         </div>
-                        <div class="border-height"></div>
-                <p>20％割引クーポン　明日まで</p></li>
+                        <div class="border-height"><p class="fadeIn"></p></div>
+                        <p class="fadeIn"><a>20％割引クーポン　明日まで</a></p></li>
                 <li class="news-contents">
                     <div class="date"> 
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                     </div>
-                        <div class="border-height"></div>
-                <p>10周年記念 割引クーポン配布中『最大３0％off』</p></li>
+                        <div class="border-height"><p class="fadeIn"></p></div>
+                        <p class="fadeIn"><a>10周年記念 割引クーポン配布中『最大３0％off』</a></p></li>
                 <li class="news-contents">
                     <div class="date"> 
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                         </div>
-                        <div class="border-height"></div>
-                <p>"しめ縄かざり"の予約販売がスタートしました🎍</p></li>
+                        <div class="border-height"><p class="fadeIn"></p></div>
+                        <p class="fadeIn"><a>"しめ縄かざり"の予約販売がスタートしました🎍</a></p></li>
                 <li class="news-contents">
                     <div class="date"> 
+                        <p class="fadeIn">
                         2023<br>
                         01.31
+                        </p>
                         </div>
-                        <div class="border-height"></div>
-                <p>クリスマスリース　販売スタートのお知らせ</p></li>
-        
-            <div class="and-more">and more...</div>
-        </div>
+                        <div class="border-height"><p class="fadeIn"></p></div>
+                        <p class="fadeIn"><a>クリスマスリース　販売スタートのお知らせ</a></p></li>
+            </div>
+            <div class="andMore"><p class="fadeIn">and more...</p></div>
             <div class="line-top"></div>
             <div class="top">TOP</div>
     </div>
     </div>
+    <script>
+         const fadeIn = document.querySelectorAll(".fadeIn");
+  // IntersectionObserverのオプションを設定
+  const options = {
+    rootMargin: '100px',
+    threshold: 1,
+  };
+  // IntersectionObserverを実行
+  const observer = new IntersectionObserver(showElement,options);
+  // fadeInクラスが付与されてる要素にたどり着いたら発火。
+  fadeIn.forEach((fadeIn) => {
+    observer.observe(fadeIn);
+  });
+  // 要素が表示されたら実行する動作
+  function showElement(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 要素にactiveクラスを付与
+        entry.target.classList.add("active");
+      }
+    });
+  }
+    </script>
     <script type="text/javascript">
         const targets = document.getElementsByClassName('src-target');
         for(let i = targets.length; i--;){
@@ -379,7 +415,6 @@
             <img src="images/instagram.jpeg" width="25px" alt="">
         </div>
             <div class="copyright">©︎2023 eMMa Ltd.</div>
-        </div>
         </div>
     </footer>
 </html>
