@@ -118,7 +118,7 @@ body {
 .slide-menu .number {
     margin-top: 10%;
 }
-.hamburger.active span:first-of-type{
+  .hamburger.active span:first-of-type{
     top: 0;
   }
   .hamburger.active span:nth-of-type(2){
@@ -130,33 +130,35 @@ body {
     top: 90%;
     right: 0;
     width: 50%;
-  }
-  .slide-menu.active{
+}
+.slide-menu.active{
     transform: translateX(0); 
-  }
+}
 .main img, .about img,.scr-target img{
     object-fit: cover;
 }
 .main img {
-    height: 62.7vh;
+    height: 65.4vh;
     margin: 76px auto;
     background-attachment: fixed;
     transform: scale(-1, 1);
-    position: relative;
 }
 .title,.Eng-ver,h2,.detail-box a,h4,.border-height,.news ,footer{
     opacity: 0.6;
 } 
+.main {
+    position: relative;
+}
 .title {
     position: absolute;
     left: 5%;
-    top: 26.3%;
+    top: 32.2%;
     font-size: 1.3em;
 }
 .Eng-ver {
     position: absolute;
     left: 5%;
-    top: 243px;
+    top: 251px;
 }
 .about{
     margin: auto 4.8%;
@@ -164,7 +166,7 @@ body {
 .about img {
     min-height: 180px;
 }
-.scroll {
+.scroll{
     display: none;
 }
 .slide-menu li,.Eng-ver,.mainOutline a,.productOutline p,.sentence,
@@ -177,7 +179,6 @@ h1 {
 }
 .mainOutline h1 {
     margin: 3% auto 0.5% auto;
- 
 }
 .sentence {
     margin:  5% auto 30px auto;
@@ -216,19 +217,19 @@ h1 {
 .Item{
     width: 42.8%;
     margin: 2.2%;
-  }
-  .Item:hover ,.ItemName,.price {
+}
+.Item:hover ,.ItemName,.price {
     cursor: pointer;
-  }
-  .Item-Img{
+}
+.Item-Img{
     width: 100%;
     padding-top: 96%;
     transition: all, 0.6s;
-  }
-  .Item-Img:hover{
+}
+.Item-Img:hover{
     opacity: 0.6;
     transform: scale(1.1);
-  }
+}
 .ItemName {
     margin-top: 5%;
 }
@@ -257,7 +258,7 @@ h1 {
     width: 90%;
     margin:  34px auto ;
 }
-.and-more p:hover ,.view-more p:hover,.andMore p:hover  {
+.and-more p:hover ,.view-more p:hover,.andMore p:hover{
     background: black;
     color: white;
 }
@@ -277,7 +278,7 @@ h2 {
     padding: 30px 20px;
     margin: 10px auto;
     color: black;
-    transition: .1s;
+    transition: 1s;
 }
 .detail-box a:hover {
     padding-left: 40px;
@@ -347,15 +348,35 @@ h4 {
     height: 42px;
     margin: auto 22px;
 }
-.line-top {
-    border-right: solid 1px black;
-    height: 60px;
-    margin: 60px 50% 0 auto;
+.tops {
+    width: 10%;
+    margin: auto;
 }
-.line-top::after:hover {
-    border-right: solid 1px black;
+.line-top {
     height: 60px;
-    margin: 50px 50% 0 auto;
+    margin: 60px auto;
+    position: relative;
+    transition:.5s;
+}
+.line-top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 60px;
+    width: 1px;
+    background: black;
+}
+.line-top::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: .3s;
+}
+.line-top:hover::before{
+    top: -20px;
 }
 .top {
     text-align: center;
@@ -490,7 +511,7 @@ h4 {
         font-size: 1rem;
     }
 }
-  @media screen and (min-width:801px) {
+  @media screen and (min-width:807px) {
     .logo img{
         width: 50px;
         margin: 5px 30px 0 5%;
@@ -500,24 +521,20 @@ h4 {
         color: #0097b2;
         margin: 0 4.5%;
     }
-      .header {
+    .header {
           height: 94px;
       }
-      .contents {
+    .contents {
           width: 98%;
           margin: auto;
       }
-      .about .more {
-          width: 50%;
-          margin-top: 10%;
+    .title{
+          top: 41%;
       }
-      .title{
-          top: 34.2%;
+    .Eng-ver {
+          top: 47.3%;
       }
-      .Eng-ver {
-          top: 39.4%;
-      }
-      .information{
+    .information{
         display: flex;
         width: 90%;
         margin: 70px auto;
@@ -534,35 +551,47 @@ h4 {
         padding: 32px;
     }
     .and-more,.andMore {
-      width: 40%;
+      width: 90%;
     }
     .view-more {
       margin: 5% auto 8% auto;
     }
 @media screen and (min-width:1021px) {
     .main img {
-        height: 80%;
+        height: 70%;
         right: 0;
         padding-right: 19%;
+    }
+    .main {
         position: relative;
+    }
+    .title{
+        top: 37.6%;
+        margin-left: 5.7%;
+        font-size: 2rem;
+    }
+    .Eng-ver {
+        top: 46%;
+        margin-left: 5.7%;
     }
     .scroll,.scroll-line {
         display: block;
         font-size: 0.3rem;
-        left: 12%;
         writing-mode: vertical-rl;
         position: absolute;
-        opacity: .4;
-        bottom: 27%;
+        opacity: .5;
+        bottom: 24.5%;
+        left: 12%;
     }
     .scroll-line  {
-        left: 12.4%;
+        position: absolute;
+        left: 12.5%;
     }
     .scroll-line::after{
         content: "";
         position: absolute;
         top: 0px;
-        left: 5%;
+        left: 10%;
         width: 1px;
         height: 50px;
         background: rgb(151, 148, 148);
@@ -572,7 +601,7 @@ h4 {
       @keyframes pathmove{
         0%{
           height:0;
-          top:10px;
+          top:25px;
           opacity: 0;
         }
         50%{
@@ -580,20 +609,11 @@ h4 {
           opacity: 1;
         }
         100%{
-          height:0;
-          top:50px;
+          height: 60px;
+          top:25px;
           opacity: 0;
         }
       }
-    .title{
-        top: 47%;
-        margin-left: 5.7%;
-        font-size: 2rem;
-    }
-    .Eng-ver {
-        top: 56.2%;
-        margin-left: 5.7%;
-    }
     .about {
         width: 80%;
         display: flex;
@@ -674,3 +694,24 @@ h4 {
        margin-top: -20px;
     }
   }}
+  @media screen and (min-width:1201px) {
+    .main {
+        position: relative;
+    }
+    .title{
+        top: 41.5%;
+    }
+    .Eng-ver {
+        top: 48%;
+    }
+    .scroll,.scroll-line {
+        bottom: 17%; 
+    }
+    .about img {
+        height: 65vh;
+    }
+    .top {
+        margin: 0 auto 165px auto;
+    }
+
+  }

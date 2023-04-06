@@ -57,6 +57,9 @@
         <img src="images/top.jpeg" alt="">
         <div class="title"><p class="fadeIn">花が叶える、夢もある</p></div>
         <div class="Eng-ver"><p class="fadeIn">There are dreams for flowers to come true.</p></div>
+        <div class="scroll">scroll</div>
+        <div class="scroll-line"></div>
+        
     </div>
         <div class="about">
         <img src="images/sub1.jpeg" alt="" >
@@ -348,28 +351,25 @@
                         <p class="fadeIn"><a>クリスマスリース　販売スタートのお知らせ</a></p></li>
             </div>
             <div class="andMore"><p class="fadeIn">and more...</p></div>
+            <div class="tops">
             <div class="line-top"></div>
             <div class="top">TOP</div>
+            </div>
     </div>
     </div>
     <script>
          const fadeIn = document.querySelectorAll(".fadeIn");
-  // IntersectionObserverのオプションを設定
   const options = {
     rootMargin: '100px',
     threshold: 1,
   };
-  // IntersectionObserverを実行
   const observer = new IntersectionObserver(showElement,options);
-  // fadeInクラスが付与されてる要素にたどり着いたら発火。
   fadeIn.forEach((fadeIn) => {
     observer.observe(fadeIn);
   });
-  // 要素が表示されたら実行する動作
   function showElement(entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // 要素にactiveクラスを付与
         entry.target.classList.add("active");
       }
     });
