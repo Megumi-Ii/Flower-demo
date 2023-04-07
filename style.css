@@ -7,13 +7,11 @@
     font-weight: lighter;
     letter-spacing: 2.26px;
 }
-body ,.header, .main img ,.about img ,.hamburger span,footer{
+body ,.header, .main img ,.about img ,.hamburger span,.products,.about .and-more,.Item-Img,footer{
     width: 100%;
 }
 body {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
 }
 .header {
     height: 75.8px;
@@ -30,10 +28,15 @@ body {
     width: 40px;
     margin: 5px 30px 0 5%;
 }
+.name,.logo-name {
+    color: #0097b2;
+}
 .name {
     font-size: 0.8rem;
-    color: #0097b2;
     margin: 0 5%;
+}
+.logo-name{
+    font-size: 2.1rem;
 }
 .click {
     display: flex;
@@ -41,18 +44,13 @@ body {
     right: 45px;
     top: 15px;
 }
-.click img {
+.click img ,.contact img{
     margin: 18px 8px;
 }
-.click img:hover{
+.click img:hover, .slide-menu li:hover, .slide-menu li p:hover{
     opacity: .5;
+    transition: all .5s;
 }
-.header-area{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-  }
   .hamburger{
     width: 16px;
     height: 15px;
@@ -83,37 +81,39 @@ body {
     background-color:white;
     position: fixed;
     top: 75px;
-    width: 60%;
+    width: 300px;
     height: 100%;
     right: 0;
     transform: translateX(100%); 
     list-style: none;
     z-index: 6;
+    border-left: solid 0.8px rgb(141, 136, 136);
 }
-.slide-menu li{
+ .slide-menu li{
     color: black;
     line-height: 300%;
     margin-left: 16%;
 }
 .slide-menu p{
-    font-size: 0.5rem;
     margin-left: 5%;
 }
 .slide-menu img {
     width: 15px;
+    height: 15px;
 }
-.contact img{
-    margin: 7%;
-}
-.slide-menu .search,.mainOutline a,.productOutline p ,.top,.copyright {
+.slide-menu .search,h3,.mainOutline a,.productOutline p ,.top,.copyright  ,.scroll,.scroll-line{
     opacity: .5;
 }
 .borderBottom{
     border-bottom: solid 1px;
     width: 200px;
 }
+.search {
+    display: flex;
+}
 .search img{
-    margin-left: 180px;
+    margin-left: 110px;
+    bottom: 0%;
 }
 .slide-menu .number {
     margin-top: 10%;
@@ -143,8 +143,8 @@ body {
     background-attachment: fixed;
     transform: scale(-1, 1);
 }
-.title,.Eng-ver,h2,.detail-box a,h4,.border-height,.news ,footer{
-    opacity: 0.6;
+.title,.Eng-ver,h2,.detail-box a,.border-height,.news ,footer{
+    opacity: .6;
 } 
 .main {
     position: relative;
@@ -169,40 +169,40 @@ body {
 .scroll{
     display: none;
 }
-.slide-menu li,.Eng-ver,.mainOutline a,.productOutline p,.sentence,
-.detail-box a,h4,.date ,.news-contents p ,.top{
+.slide-menu li,.Eng-ver,.sentence,.detail-box a,.date ,.news-contents p ,.top{
     font-size: 0.72rem;
 }
 h1 {
-    font-size: 1.5em;
-    letter-spacing: 3.6px;
+    font-size: 1.5rem;
+    letter-spacing: 5%;
+    margin-top: 20px;
 }
-.mainOutline h1 {
-    margin: 3% auto 0.5% auto;
+h3 {
+    font-size: 0.75rem;
+    margin: 8px auto 30px auto;
+}
+.productOutline,.newsOutline {
+    margin: 20px auto 0px 5%;
 }
 .sentence {
     margin:  5% auto 30px auto;
-    line-height: 20px;
+    line-height: 22px;
     color: rgb(39, 39, 39);
     letter-spacing: 2.3px;
 }
-.productOutline {
-    margin: 80px auto 20px 5% ;
-    }
-.productOutline h1 {
-    margin-bottom: 6px;
-
-}
 .ItemName, .price{
-    margin: 10px ;
-    font-size: 0.7rem;
+    margin: 5% auto 3% auto;
+}
+.slide-menu p,.ItemName, .price,.policy a,.copyright{
+    font-size: 0.5rem;
+}
+.price {
     color: gray;
 }
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
 }
 .src-target {
 	opacity: 0;
@@ -222,7 +222,6 @@ h1 {
     cursor: pointer;
 }
 .Item-Img{
-    width: 100%;
     padding-top: 96%;
     transition: all, 0.6s;
 }
@@ -230,19 +229,11 @@ h1 {
     opacity: 0.6;
     transform: scale(1.1);
 }
-.ItemName {
-    margin-top: 5%;
-}
-.price {
-    margin-bottom: 4%;
-}
 .about .and-more {
     margin: 0  auto 15%  auto;
-    width: 100%;
-    text-align: center;
 }
 .andMore {
-    margin:  26px auto ;
+    margin:  30px auto 60px auto;
     width: 90%;
 }
 .and-more p,.view-more p,.andMore p{
@@ -252,7 +243,7 @@ h1 {
     font-size: 0.7rem;
     transition: 0.2s;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto;
 }
 .view-more {
     width: 90%;
@@ -265,15 +256,14 @@ h1 {
 h2 {
     font-size: 1rem;
     margin: 92px auto 50px auto;
-    text-align: center;
 }
-.detail-box ,.news{
+.detail-box {
     list-style: none;
     margin: 0 13.8%;
 }
 .detail-box a,.story,.business {
     border: solid 0.3px;
-    border-color:rgb(143, 142, 142);
+    border-color:rgb(142, 142, 142);
     width: 100%;
     padding: 30px 20px;
     margin: 10px auto;
@@ -285,7 +275,6 @@ h2 {
     border: solid 1px;
 }
 .detail-box p{
-    position: absolute;
     top: 40px;
     color: black;
     border-bottom: solid 1px ;
@@ -312,49 +301,42 @@ h2 {
     opacity: .7;
 }
 .story:hover ,.business:hover  {
-    background-color: black;
+    background: black;
     color: white;
 }
-h3 p{
-    padding: 46px 20px 8px 25px;
-    letter-spacing: 3px;
-    font-size: 1.6rem;
-    font-family: "游明朝",  serif;
-}
-h4 {
-    padding: 0 20px 30px 25px;
-    font-family: "ヒラギノ明朝 ProN W3",  serif;
-}
-.news {
-    margin-left: 8.7%;
+.news,.news-contents{
+    margin-left: 5%;
 }
 .news-contents{
     display: flex;
-    margin-left: 0;
+    transition: .5s;
+}
+.news-contents:hover{
+    opacity: .5;
 }
 .date {
     line-height: 22px;
     margin-bottom: 30px;
-    font-size: 0.7rem;
 }
 .news-contents .fadeIn {
-    padding-top: 1%;
+    padding-top: 2%;
 }
 .news-contents .fadeIn a {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 .border-height p{
     border-right: solid 1px gray;
     height: 42px;
     margin: auto 22px;
 }
-.tops {
-    width: 10%;
-    margin: auto;
+h2,.about .and-more,.tops,.top,.logo-name,.policy,.copyright  {
+    text-align: center;
+}
+.tops ,.copyright ,.logo-name,.logo-name img{
+    margin: 0 auto;
 }
 .line-top {
     height: 60px;
-    margin: 60px auto;
     position: relative;
     transition:.5s;
 }
@@ -378,36 +360,23 @@ h4 {
 .line-top:hover::before{
     top: -20px;
 }
-.top {
-    text-align: center;
-    margin: 2% auto 6% auto;
-}
-.logo-name{
-    text-align: center;
-    font-size: 2.1rem;
-    color:#0097b2;
-    margin: 10px auto;
+.tops .top {
+    margin: 1% auto 7% auto;
+    color: black;
+    text-decoration: none;
 }
 .logo-name img {
     width: 40px;
-    margin: 0px auto;
-}
-.policy {
-    font-size: 0.6rem;
-    text-align: center;
 }
 .SNS {
     display: flex;
     width: 100px;
-    margin: 18px auto;  
+    margin: 16px auto;  
 }
 .SNS img {
     margin: 10px;
 }
 .copyright {
-    margin: 0 auto;
-    font-size: 0.6rem;
-    text-align: center;
     padding-bottom: 8%;
 }
 .arrow{
@@ -448,19 +417,18 @@ h4 {
     transition:.5s;
 }
 .arrow:hover::before{
-    right: 10px;
     width: 60px;
 }
-.arrow:hover::after{
+.arrow:hover::before,.arrow:hover::after{
     right: 10px;
 }
-  .fadeIn {
+.fadeIn {
     opacity: 0;
-  }
-  .fadeIn.active {
+}
+.fadeIn.active {
     opacity: 1;
     animation: fadeIn 3s;
-  }
+}
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -479,18 +447,16 @@ h4 {
         top: 25px;
     }
     .hamburger{
-        width: 16px;
         right: 3%;
-        top: 45px;
+        top: 43px;
       }
+    .detail-box,.box:last-child {
+        margin:  0 auto;
+    }
     .detail-box{
         display: flex;
         width: 90%;
         flex-wrap: wrap;
-        margin: 0 auto;
-    }
-    .box:last-child {
-        margin:  auto;
     }
     .box{
         width: 45%;
@@ -506,27 +472,17 @@ h4 {
         width: 44%;
         margin: 2%;
       }
-    h2 {
-        margin-bottom: 4.6%;
-        font-size: 1rem;
-    }
 }
   @media screen and (min-width:807px) {
     .logo img{
         width: 50px;
-        margin: 5px 30px 0 5%;
     }
     .name {
         font-size: 1.2rem;
-        color: #0097b2;
         margin: 0 4.5%;
     }
     .header {
           height: 94px;
-      }
-    .contents {
-          width: 98%;
-          margin: auto;
       }
     .title{
           top: 41%;
@@ -541,29 +497,21 @@ h4 {
     }
     .ItemName {
         margin: 14px auto 0 auto;
-    }
-    .price  {
-        margin: 5px auto 5% auto;
+        font-size: 0.8rem;
     }
     .story, .business{
         width: 46%;
         font-size: 1rem;
         padding: 32px;
     }
-    .and-more,.andMore {
-      width: 90%;
-    }
-    .view-more {
-      margin: 5% auto 8% auto;
+    .and-more,.view-more,.andMore {
+        width: 90%;
     }
 @media screen and (min-width:1021px) {
     .main img {
         height: 70%;
         right: 0;
         padding-right: 19%;
-    }
-    .main {
-        position: relative;
     }
     .title{
         top: 37.6%;
@@ -579,8 +527,7 @@ h4 {
         font-size: 0.3rem;
         writing-mode: vertical-rl;
         position: absolute;
-        opacity: .5;
-        bottom: 24.5%;
+        bottom: 22%;
         left: 12%;
     }
     .scroll-line  {
@@ -626,29 +573,23 @@ h4 {
         left: 0%;
     }
     .about img {
-      width: 50%;
-      height: 460px;
+       width: 50%;
+       height: 400px;
     }
     .sentence {
         width: 45%;
-        opacity: .7;
         position: absolute;
         left: 0;
-        top: 20%;
+        top: 25%;
     }
     .productOutline {
-        margin: 0 auto 50px 9% ;
+        margin: 0 auto 50px 8.7% ;
     }
     .about .and-more {
         width: 25%;
         position: absolute;
-        bottom: -5%;
+        bottom: -25%;
         left: 0%;
-    }
-    .products {
-        width: 100%;
-        display: flex;
-        margin: auto;
     }
     .Item{
         width: 25.8%;
@@ -657,9 +598,6 @@ h4 {
     .box{
         width: 29%;
         margin: 6px auto;
-    }
-    .news {
-        margin-left: 3%;
     }
     .view-more, .andMore{
         margin: 3% auto;
@@ -672,7 +610,6 @@ h4 {
     }
     .footer-block {
         display: flex;
-        width: 100%;
     }
     .logo-name {
         position: absolute;
@@ -691,13 +628,10 @@ h4 {
         margin-right: 5%;
     }
     .copyright {
-       margin-top: -20px;
+        margin-top: -20px;
     }
-  }}
+  }
   @media screen and (min-width:1201px) {
-    .main {
-        position: relative;
-    }
     .title{
         top: 41.5%;
     }
@@ -705,13 +639,10 @@ h4 {
         top: 48%;
     }
     .scroll,.scroll-line {
-        bottom: 17%; 
+        bottom: 18%;
     }
     .about img {
         height: 65vh;
     }
-    .top {
-        margin: 0 auto 165px auto;
-    }
-
-  }
+    }}
+    
